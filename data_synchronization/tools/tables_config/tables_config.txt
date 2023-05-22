@@ -1,0 +1,10 @@
+ustyss_p_oprytd_basic@^Aitem_num_id@^Aseries
+ustyss_p_channel_oprytd_shop@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_shop_cost@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_shop@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_po_spec@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_fashion@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_sales@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_style@^Astyle_num_id@^Aseries
+ustyss_p_oprytd_container_rule@^Aitem_num_id@^Aseries
+ustyss_p_oprytd_financial@^Aitem_num_id@^Aseries

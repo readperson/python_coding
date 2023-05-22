@@ -1,0 +1,17 @@
+ustys:ustyss_p_units:N
+ustys:ustyss_o_oprytd_origin:N
+ustys:ustyss_o_province:Y
+ustys:ustyss_o_city:Y
+ustys:ustyss_o_city_area:Y
+ustys:ustyss_o_city_town:Y
+ustys:ustyss_o_sub_unit:Y
+ustys:ustyss_o_tag:Y
+ustys:ustyss_p_div:Y
+ustys:ustyss_p_catelog_pty1:Y
+ustys:ustyss_p_catelog_pty2:Y
+ustys:ustyss_p_catelog_pty3:Y
+ustys:ustyss_p_catelog_pty4:Y
+ustys:ustyss_p_brand:Y
+ustys:ustyss_o_cort:Y
+SUPPLYCHAIN:scm_bl_contract:Y
+COMMONDOSSIER:t_user:N
