@@ -1,0 +1,1 @@
+http://api.snsports.cn/api/content/phone/GetBMMatchListByAreaId.json?pageSize=20&pageNum=1&status=1&sportType=&cityId=5643&appVersion=3.5.1&device=androidphone&timestamp=1605598779653&sign=82437f1f3859188c280e436fbfda212ceaed1b88&apikey=7f4880f7ab5dd50d53

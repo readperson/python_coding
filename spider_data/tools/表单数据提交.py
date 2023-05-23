@@ -1,0 +1,16 @@
+import requests
+import json
+
+# url = "http://cpapi.donggeqiu.com/api/zjtj.action"
+url = "http://cpapi.donggeqiu.com/api/zjtj.action"
+# 可以将data 直接设置为string 放入
+# data = "accessSecretData=WfgrdsMVoxbAxAkhZMAJDMnBM9r%252BTnpgmhL%252FCtZSJvHSr3aZRs2%252FRcs8i67ezCnHjSgUhHHtHgIweWAigdVV67xQMQVfw8vwa3VE6hcxoFa2HBzrtirR3G8sW5AddicF%252Fg9kXQjIAbtU9ZZGjhxLjRdu82YuxpNYbfYSNxuNDKLOoXXCGxow%252FrIU6Ginuw5gY4KEHaqbdhQ%252BFfzHdULsdKFla0SQ6DBNSMseNGAECxHIvuhxmK%252BwsON7uoQzQdq73YDbIhHmE9%252BVJ%252FBkEM4mnMQcUkGR0kbS1cgFbTqs%252BJGnDa5RPKGkqscf5FZF%252Fou%252FA9H1gz9NEEHg08%252F3cDfbOwLYOFmXOhgNoK6mjS9yAH5X9ygQ1QaYXWgU805jr9O3"
+# data = "accessSecretData=bbytJSnxUW9UZsVufVcDQMnBM9r%252BTnpgmhL%252FCtZSJvE71Oje4gThTF%252FFMiUeGQg0WcWwM05VsmyaPdz2vuxfMcoJdVa%252FsAp8Q1Ezz6jtVTb5owWY%252F0iJobNoIaqTDYyAnpMg8ALwb6JzJz%252Fx3uBaaeBzkLjsgu%252BryyhzxpFaPO4n%252FTcNfCRKklCkmOd%252Fuqbjx1gR%252F%252BK7H5Xw1OMx89uO4po7akeltKSRYyuzTmGWsNmtKLdD7sELcptrpASVfsuxOdg6MMtvg%252B5tSqtoco5LMa80CUkesqNExWFzZV1ZLsj3U%252BXTjOJvnO1doZGHUDmypAaxxBvvZs0AIqzmUotKLw%253D%253D"
+data="accessSecretData=JTEz1FD9t6KgUcdL8pHJnsnBM9r%252BTnpgmhL%252FCtZSJvHSr3aZRs2%252FRcs8i67ezCnHjSgUhHHtHgIweWAigdVV67xQMQVfw8vwa3VE6hcxoFa2HBzrtirR3G8sW5AddicF%252Fg9kXQjIAbtU9ZZGjhxLjRdu82YuxpNYbfYSNxuNDKLOoXXCGxow%252FrIU6Ginuw5gY4KEHaqbdhQ%252BFfzHdULsdKFla0SQ6DBNSMseNGAECxHIvuhxmK%252BwsON7uoQzQdq73YDbIhHmE9%252BVJ%252FBkEM4mnMQcUkGR0kbS1cgFbTqs%252BJGnDa5RPKGkqscf5FZF%252Fou%252FA9H1gz9NEEHg08%252F3cDfbOwLYOFmXOhgNoK6mjS9yAH5X9ygQ1QaYXWgU805jr9O3"
+headers = {"Content-Type": "application/x-www-form-urlencoded"}
+print("url:", url)
+print("headers:", headers)
+print("data:", data)
+rep = requests.post(url=url, headers=headers, data=data).text
+rs = json.loads(rep)
+print(rs)

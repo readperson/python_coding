@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    </head>
+    <noscript>浏览器不支持javascript,页面无法访问！</noscript>  
+    <body>
+       <H1 id="msg"></H1>
+    </body>
+    <script type="text/javascript">
+        var dt = new Date(); 
+        dt.setSeconds(dt.getSeconds() + 60);
+        document.cookie = "_wtsjsk=43189362f8b0b6ee5c2cbb041c6da6bd; path=/ ";
+        var cookiesEnabled = document.cookie.indexOf("_wtsjsk=") != -1; 
+
+        function getCookie(name)
+            {
+                var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+                if(arr=document.cookie.match(reg))
+                    return arr[2];
+                else
+                    return null;
+            }
+            
+        var preurl = getCookie("_wtspurl"); 
+        var cookie_CaptchaKey = getCookie("_wtscpk");  
+        var cookie_Expire = getCookie("_wtsexp");  
+
+        if(cookie_CaptchaKey == null||cookie_Expire == null){
+            var msg = "浏览器安全检查中.....请稍后";
+            document.getElementById("msg").innerHTML=msg;
+            if (preurl==null)
+            {
+                if(!cookiesEnabled) { 
+                        var msg ="浏览器不支持cookie,页面无法访问";
+                        document.getElementById("msg").innerHTML=msg;
+                } else {
+                        //preurl = window.location.pathname;
+                        setTimeout("javascript:window.location.href ="+preurl+";",3000);
+                }
+            } else {
+                setTimeout("javascript:window.location.href ="+preurl+";",3000);
+            }
+
+        }else{
+            window.location.href = preurl ;
+        }
+    </script>
+</html>
