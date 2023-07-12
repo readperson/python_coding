@@ -9,7 +9,7 @@ from tools.logconfig.logingconfig import loging
 
 def dingSendMessage(msg):
     # 请求的URL，WebHook地址
-    url = "https://oapi.dingtalk.com/robot/send?access_token=e981981b27e72e56957edf35ea4304"
+    url = "https://oapi.dingtalk.com/robot/send?access_token=a4304"
     # 构建请求头部
     header = {
         "Content-Type": "application/json",

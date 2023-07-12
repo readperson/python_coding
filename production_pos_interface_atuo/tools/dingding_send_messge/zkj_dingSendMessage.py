@@ -5,7 +5,7 @@ from tools.logconfig.logingconfig import loging
 
 def zkj_dingSendMessage(msg):
     # 请求的URL，WebHook地址
-    url = "https://oapi.dingtalk.com/robot/send?access_token=d541b159dc77b56b878d65c2df4b077e76711849a"
+    url = "https://oapi.dingtalk.com/robot/send?access_token=7e76711849a"
     # 构建请求头部
     header = {
         "Content-Type": "application/json",
