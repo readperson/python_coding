@@ -5,7 +5,7 @@ from tools.sub_unit_num_id import get_sub_unit_num_id
 def usr_no():
     method = "gb.member.pos.member.info.get"
     params = {
-        "usr_no": "13274002725",
+        "usr_no": "13100000000",
         "sub_unit_num_id": get_sub_unit_num_id().get("sub_unit_num_id"),
         "line_ai": "true"
     }
